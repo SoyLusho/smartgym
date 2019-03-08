@@ -1,9 +1,10 @@
 <resources>
-    <string name="app_name">smartgym</string>
+    <string name="app_name">Smart Gym</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Android Studio</string>
-    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_title">Smart Gym</string>
+    <string name="nav_header_subtitle">Beta</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
+    <integer name="Splash_Screen_animation_duration">4000</integer>
 </resources>
