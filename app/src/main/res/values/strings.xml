@@ -7,4 +7,8 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <integer name="Splash_Screen_animation_duration">4000</integer>
+    <string name="title_activity_dias_restantes">Dias restantes</string>
+    <string name="titulo_asistencias">Asistencias</string>
+    <string name="titulo_medidas">Medidas</string>
+    <string name="titulo_noticias">Noticias</string>
 </resources>
