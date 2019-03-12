@@ -23,12 +23,10 @@ public class SplashActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_splash);
         ico_splash = (ImageView)findViewById(R.id.ico_splash);
-        texto = (TextView)findViewById(R.id.texto);
 
         Animation anim = AnimationUtils.loadAnimation(getApplicationContext(),R.anim.slide_in_left);
-
         ico_splash.setAnimation(anim);
-        texto.setAnimation(anim);
+
 
         anim.setAnimationListener(new Animation.AnimationListener() {
 

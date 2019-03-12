@@ -12,26 +12,12 @@
 
     <ImageView
         android:id="@+id/ico_splash"
-        android:layout_width="146dp"
-        android:layout_height="162dp"
+        android:layout_width="238dp"
+        android:layout_height="327dp"
+        android:layout_centerInParent="true"
         android:adjustViewBounds="false"
         android:cropToPadding="false"
-        android:src="@drawable/ic_fitness"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-
-    <TextView
-        android:id="@+id/texto"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/ico_splash"
-        android:layout_centerHorizontal="true"
-        android:text="Smart Gym"
-        android:textColor="#32373b"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        android:typeface="sans" />
+        android:src="@drawable/smartgym_ico" />
 
 
 </RelativeLayout>
