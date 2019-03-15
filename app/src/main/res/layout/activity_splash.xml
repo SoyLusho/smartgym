@@ -17,7 +17,8 @@
         android:layout_centerInParent="true"
         android:adjustViewBounds="false"
         android:cropToPadding="false"
-        android:src="@drawable/smartgym_ico" />
+        android:src="@drawable/smartgym_ico"
+        android:contentDescription="@string/logo_inicio"/>
 
 
 </RelativeLayout>

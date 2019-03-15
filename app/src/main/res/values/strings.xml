@@ -2,8 +2,8 @@
     <string name="app_name">Smart Gym</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="nav_header_title">Smart Gym</string>
-    <string name="nav_header_subtitle">Beta</string>
+    <string name="nav_header_title">Lina Paola</string>
+    <string name="nav_header_subtitle">LinaP1987@gmail.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
     <integer name="Splash_Screen_animation_duration">4000</integer>
@@ -11,4 +11,5 @@
     <string name="titulo_asistencias">Asistencias</string>
     <string name="titulo_medidas">Medidas</string>
     <string name="titulo_noticias">Noticias</string>
+    <string name="logo_inicio">imagen de inicio para el splash</string>
 </resources>
