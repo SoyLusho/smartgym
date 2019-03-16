@@ -9,6 +9,10 @@
             android:icon="@drawable/ic_dias"
             android:title="Dias restantes" />
         <item
+            android:id="@+id/pagos"
+            android:icon="@drawable/payment"
+            android:title="Pagos" />
+        <item
             android:id="@+id/asistencias"
             android:icon="@drawable/ic_asistencias"
             android:title="Asistencias" />
@@ -20,6 +24,10 @@
             android:id="@+id/noticias"
             android:icon="@drawable/ic_fitness"
             android:title="Noticias" />
+        <item
+            android:id="@+id/acerca"
+            android:icon="@drawable/description"
+            android:title="Acerca de nosotros" />
     </group>
 
 </menu>

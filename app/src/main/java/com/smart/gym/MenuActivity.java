@@ -118,6 +118,8 @@ public class MenuActivity extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.content_main,new Medidas()).commit();
         } else if (id == R.id.noticias) {
             fragmentManager.beginTransaction().replace(R.id.content_main,new Noticias()).commit();
+        }else if (id == R.id.acerca) {
+            fragmentManager.beginTransaction().replace(R.id.content_main,new Acerca_nosotros()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
