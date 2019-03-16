@@ -1,5 +1,6 @@
 package com.smart.gym;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -20,6 +21,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -114,12 +116,22 @@ public class MenuActivity extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.content_main,new Dias_restantes()).commit();
         } else if (id == R.id.asistencias) {
             fragmentManager.beginTransaction().replace(R.id.content_main,new Asistencias()).commit();
-        } else if (id == R.id.medidas) {
+        }else if (id == R.id.pagos) {
+            fragmentManager.beginTransaction().replace(R.id.content_main,new Pagos()).commit();
+        }
+        else if (id == R.id.medidas) {
             fragmentManager.beginTransaction().replace(R.id.content_main,new Medidas()).commit();
         } else if (id == R.id.noticias) {
             fragmentManager.beginTransaction().replace(R.id.content_main,new Noticias()).commit();
         }else if (id == R.id.acerca) {
             fragmentManager.beginTransaction().replace(R.id.content_main,new Acerca_nosotros()).commit();
+        }else if (id == R.id.cerrar) {
+
+            Intent i = new Intent(MenuActivity.this, LoginActivity.class);
+            MenuActivity.this.startActivity(i);
+            finish();
+            Toast.makeText(getApplicationContext(), "Se ha cerrado la sesión correctamente", Toast.LENGTH_LONG).show();
+
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);

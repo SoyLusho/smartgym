@@ -50,7 +50,7 @@ public class SplashActivity extends AppCompatActivity {
 
     public void Cargar_Init(){
 
-       Intent i = new Intent(SplashActivity.this, MenuActivity.class);
+       Intent i = new Intent(SplashActivity.this, LoginActivity.class);
        SplashActivity.this.startActivity(i);
        finish();
 

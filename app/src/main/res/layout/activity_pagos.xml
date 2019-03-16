@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <android.support.constraint.ConstraintLayout android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:android="http://schemas.android.com/apk/res/android">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
         <TextView
             android:id="@+id/textView2"
             android:layout_width="0dp"
-            android:layout_height="51dp"
-            android:layout_marginTop="16dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="24dp"
             android:ems="10"
-            android:fontFamily="sans-serif"
             android:gravity="center_horizontal"
-            android:text="@string/registro_asistencias"
+            android:text="@string/registro_pagos"
             android:textColor="@color/verde"
             android:textSize="30sp"
             app:fontFamily="@font/roboto"
@@ -23,21 +23,21 @@
 
 
         <ListView
-            android:id="@+id/listview_asistencias"
+            android:id="@+id/listview_pagos"
             android:layout_width="0dp"
-            android:layout_height="493dp"
+            android:layout_height="463dp"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="8dp"
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
-            android:layout_marginBottom="8dp"
+            android:layout_marginBottom="104dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2"
-            app:layout_constraintVertical_bias="0.121" />
+            app:layout_constraintVertical_bias="0.093" />
     </android.support.constraint.ConstraintLayout>
 
 
