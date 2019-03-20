@@ -15,6 +15,10 @@
     <string name="acerca">Acerca de nosotros</string>
     <string name="logo_inicio">imagen de inicio para el splash</string>
     <string name="registro_pagos">Registro de pagos</string>
-    <string name="correo">Digite el Correo</string>
+    <string name="correo">Digite su correo</string>
     <string name="password">Digite su contraseña</string>
+    <string name="t_c_n">N°</string>
+    <string name="t_c_fp">Fecha pago</string>
+    <string name="t_c_fa">Fecha asistencia</string>
+    <string name="t_c_vp">Valor pago</string>
 </resources>
