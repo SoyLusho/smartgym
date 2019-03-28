@@ -42,6 +42,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
+            tools:fontFamily="@font/roboto_bold"
             tools:ignore="NotSibling" />
 
 
@@ -54,18 +55,18 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             android:layout_marginBottom="204dp"
-
+            android:tint="@color/verde"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView2"
             app:layout_constraintVertical_bias="0.231"
-            app:srcCompat="@drawable/circulo_v" />
+            app:srcCompat="@drawable/circulo_verde" />
 
 
         <TextView
             android:id="@+id/numero"
-            android:layout_width="106dp"
+            android:layout_width="103dp"
             android:layout_height="136dp"
 
             android:text="30"
@@ -74,10 +75,9 @@
             app:fontFamily="@font/roboto"
             app:layout_constraintBottom_toBottomOf="@+id/circulo"
             app:layout_constraintEnd_toEndOf="@+id/circulo"
-            app:layout_constraintHorizontal_bias="0.514"
             app:layout_constraintStart_toStartOf="@+id/circulo"
             app:layout_constraintTop_toTopOf="@+id/circulo"
-            app:layout_constraintVertical_bias="0.483" />
+            app:layout_constraintVertical_bias="0.528" />
 
 
     </android.support.constraint.ConstraintLayout>

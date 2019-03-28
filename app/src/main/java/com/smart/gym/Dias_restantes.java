@@ -19,10 +19,7 @@ public class Dias_restantes extends Fragment {
         // Inflate the layout for this fragment
 
 
-        Drawable myIcon = getResources().getDrawable( R.drawable.circulo_v);
-        ColorFilter filter;
-        filter = new LightingColorFilter( Color.rgb(0,87,74), Color.rgb(0,87,74));
-        myIcon.setColorFilter(filter);
+
 
         return inflater.inflate(R.layout.activity_dias_restantes, container, false);
     }

@@ -14,6 +14,7 @@
     <string name="titulo_noticias">Noticias</string>
     <string name="acerca">Acerca de nosotros</string>
     <string name="logo_inicio">imagen de inicio para el splash</string>
+    <string name="logotipo_app">Logotipo de la aplicacion</string>
     <string name="registro_pagos">Registro de pagos</string>
     <string name="correo">Digite su correo</string>
     <string name="password">Digite su contraseña</string>
@@ -21,4 +22,5 @@
     <string name="t_c_fp">Fecha pago</string>
     <string name="t_c_fa">Fecha asistencia</string>
     <string name="t_c_vp">Valor pago</string>
+    <string name="titulo_developer">Equipo desarollador</string>
 </resources>

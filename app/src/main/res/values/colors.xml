@@ -6,4 +6,6 @@
     <color name="verde">#008577</color>
     <color name="negro">#000000</color>
     <color name="blanco">#FFFFFF</color>
+    <color name="defecto">#fafafa</color>
+    <color name="gris">#737373</color>
 </resources>
