@@ -23,8 +23,8 @@
 
         <ImageView
             android:id="@+id/imagen_medidas_corporales"
-            android:layout_width="343dp"
-            android:layout_height="358dp"
+            android:layout_width="310dp"
+            android:layout_height="345dp"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="1dp"
@@ -34,14 +34,15 @@
             android:src="@drawable/medidas_corporales"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.077" />
+            app:layout_constraintVertical_bias="0.095" />
 
         <ImageView
             android:id="@+id/imageView7"
-            android:layout_width="350dp"
-            android:layout_height="304dp"
+            android:layout_width="294dp"
+            android:layout_height="260dp"
             android:layout_marginStart="8dp"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="5dp"
@@ -59,86 +60,86 @@
         <TextView
             android:id="@+id/pecho_normal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+1"
+            android:layout_height="20dp"
             android:fontFamily="@font/roboto_bold"
+            android:text="+1"
             android:textColor="@color/blanco"
             app:layout_constraintBottom_toBottomOf="@+id/imagen_medidas_corporales"
             app:layout_constraintEnd_toEndOf="@+id/imagen_medidas_corporales"
-            app:layout_constraintHorizontal_bias="0.391"
+            app:layout_constraintHorizontal_bias="0.385"
             app:layout_constraintStart_toStartOf="@+id/imagen_medidas_corporales"
             app:layout_constraintTop_toTopOf="@+id/imagen_medidas_corporales"
-            app:layout_constraintVertical_bias="0.268" />
+            app:layout_constraintVertical_bias="0.275" />
 
         <TextView
             android:id="@+id/cuello"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+1"
+            android:layout_width="19dp"
+            android:layout_height="20dp"
             android:fontFamily="@font/roboto_bold"
+            android:text="+1"
             android:textColor="@color/blanco"
             app:layout_constraintBottom_toBottomOf="@+id/imagen_medidas_corporales"
             app:layout_constraintEnd_toEndOf="@+id/imagen_medidas_corporales"
-            app:layout_constraintHorizontal_bias="0.877"
+            app:layout_constraintHorizontal_bias="0.887"
             app:layout_constraintStart_toStartOf="@+id/imagen_medidas_corporales"
             app:layout_constraintTop_toTopOf="@+id/imagen_medidas_corporales"
-            app:layout_constraintVertical_bias="0.212" />
+            app:layout_constraintVertical_bias="0.232" />
 
         <TextView
             android:id="@+id/pecho_extendido"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+4"
+            android:layout_height="22dp"
             android:fontFamily="@font/roboto_bold"
+            android:text="+4"
             android:textColor="@color/blanco"
             app:layout_constraintBottom_toBottomOf="@+id/imagen_medidas_corporales"
             app:layout_constraintEnd_toEndOf="@+id/imagen_medidas_corporales"
-            app:layout_constraintHorizontal_bias="0.1"
+            app:layout_constraintHorizontal_bias="0.097"
             app:layout_constraintStart_toStartOf="@+id/imagen_medidas_corporales"
             app:layout_constraintTop_toTopOf="@+id/imagen_medidas_corporales"
-            app:layout_constraintVertical_bias="0.666" />
+            app:layout_constraintVertical_bias="0.662" />
 
         <TextView
             android:id="@+id/cintura"
-            android:layout_width="wrap_content"
-            android:layout_height="19dp"
-            android:text="+3"
+            android:layout_width="16dp"
+            android:layout_height="20dp"
             android:fontFamily="@font/roboto_bold"
+            android:text="+3"
             android:textColor="@color/blanco"
             app:layout_constraintBottom_toBottomOf="@+id/imagen_medidas_corporales"
             app:layout_constraintEnd_toEndOf="@+id/imagen_medidas_corporales"
-            app:layout_constraintHorizontal_bias="0.951"
+            app:layout_constraintHorizontal_bias="0.942"
             app:layout_constraintStart_toStartOf="@+id/imagen_medidas_corporales"
             app:layout_constraintTop_toTopOf="@+id/imagen_medidas_corporales"
-            app:layout_constraintVertical_bias="0.731" />
+            app:layout_constraintVertical_bias="0.717" />
 
         <TextView
             android:id="@+id/cadera"
             android:layout_width="18dp"
-            android:layout_height="22dp"
-            android:text="+2"
+            android:layout_height="23dp"
             android:fontFamily="@font/roboto_bold"
+            android:text="+2"
             android:textColor="@color/blanco"
             app:layout_constraintBottom_toBottomOf="@+id/imagen_medidas_corporales"
             app:layout_constraintEnd_toEndOf="@+id/imagen_medidas_corporales"
-            app:layout_constraintHorizontal_bias="0.267"
+            app:layout_constraintHorizontal_bias="0.259"
             app:layout_constraintStart_toStartOf="@+id/imagen_medidas_corporales"
             app:layout_constraintTop_toTopOf="@+id/imagen_medidas_corporales"
-            app:layout_constraintVertical_bias="0.806" />
+            app:layout_constraintVertical_bias="0.778" />
 
         <TextView
             android:id="@+id/cola"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="+2"
+            android:layout_height="24dp"
             android:fontFamily="@font/roboto_bold"
+            android:text="+2"
             android:textColor="@color/blanco"
             app:layout_constraintBottom_toBottomOf="@+id/imagen_medidas_corporales"
             app:layout_constraintEnd_toEndOf="@+id/imagen_medidas_corporales"
-            app:layout_constraintHorizontal_bias="0.975"
+            app:layout_constraintHorizontal_bias="0.966"
             app:layout_constraintStart_toStartOf="@+id/imagen_medidas_corporales"
             app:layout_constraintTop_toTopOf="@+id/imagen_medidas_corporales"
-            app:layout_constraintVertical_bias="0.843" />
+            app:layout_constraintVertical_bias="0.836" />
 
         <TextView
             android:id="@+id/bicep_izquierdo"
