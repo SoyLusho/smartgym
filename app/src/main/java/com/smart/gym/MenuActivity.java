@@ -2,16 +2,12 @@ package com.smart.gym;
 
 import android.content.Intent;
 import android.graphics.Bitmap;
-import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawable;
 import android.support.v4.graphics.drawable.RoundedBitmapDrawableFactory;
-import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -22,6 +18,12 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.Toast;
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.load.engine.DiskCacheStrategy;
+import com.bumptech.glide.request.RequestOptions;
+import com.bumptech.glide.request.transition.DrawableCrossFadeFactory;
+
+import static com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade;
 
 public class MenuActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -70,29 +72,19 @@ public class MenuActivity extends AppCompatActivity
             originalBitmap = Bitmap.createBitmap(originalBitmap, 0, 0, originalBitmap.getWidth(), originalBitmap.getWidth());
         }
 
-        //creamos el drawable redondeado
-        RoundedBitmapDrawable roundedDrawable =
-                RoundedBitmapDrawableFactory.create(getResources(), originalBitmap);
-
-        //asignamos el CornerRadius
-        roundedDrawable.setCornerRadius(originalBitmap.getWidth());
 
         ImageView imageView = (ImageView) findViewById(R.id.imageView);
 
-        imageView.setImageDrawable(roundedDrawable);
+        DrawableCrossFadeFactory factory =
+                new DrawableCrossFadeFactory.Builder().setCrossFadeEnabled(true).build();
 
+            Glide.with(this)
+            .load(R.drawable.per_menu)
+            .diskCacheStrategy(DiskCacheStrategy.ALL)
+            .apply(RequestOptions.circleCropTransform())
+            .transition(withCrossFade(factory))
+            .into(imageView);
 
-
-
-        /*
-        //imagen de usuario redondeada en el menu
-        ImageView imageView = (ImageView) findViewById(R.id.imageView);
-        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.drawable.per_menu);
-        RoundedBitmapDrawable roundedBitmapDrawable = RoundedBitmapDrawableFactory.create(getResources(), bitmap);
-        roundedBitmapDrawable.setCircular(true);
-        imageView.setImageDrawable(roundedBitmapDrawable);
-        //
-        */
 
         //iniciar en dias restantes
         FragmentManager fragmentManager = getSupportFragmentManager();
