@@ -23,4 +23,6 @@
     <string name="t_c_fa">Fecha asistencia</string>
     <string name="t_c_vp">Valor pago</string>
     <string name="titulo_developer">Equipo desarollador</string>
+    <string name="id_publicidad_banner">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="id_publicidad_pantalla_completa">ca-app-pub-3940256099942544/1033173712</string>
 </resources>
