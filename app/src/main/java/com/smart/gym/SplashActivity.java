@@ -1,6 +1,8 @@
 package com.smart.gym;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
@@ -12,7 +14,7 @@ import android.widget.TextView;
 public class SplashActivity extends AppCompatActivity {
 
     ImageView ico_splash;
-    TextView texto;
+    private boolean yes=false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -51,11 +53,19 @@ public class SplashActivity extends AppCompatActivity {
 
     public void Cargar_Init(){
 
+        SharedPreferences Session=getSharedPreferences("session_init", Context.MODE_PRIVATE);
 
-       Intent i = new Intent(SplashActivity.this, LoginActivity.class);
-       SplashActivity.this.startActivity(i);
-       finish();
+        yes= (Session.getBoolean("yes", false));
 
+        if(yes == true){
+            Intent i = new Intent(SplashActivity.this, MenuActivity.class);
+            SplashActivity.this.startActivity(i);
+            finish();
+        }else{
+            Intent i = new Intent(SplashActivity.this, LoginActivity.class);
+            SplashActivity.this.startActivity(i);
+            finish();
+        }
 
 
     }

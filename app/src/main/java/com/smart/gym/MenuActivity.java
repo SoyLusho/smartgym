@@ -1,6 +1,8 @@
 package com.smart.gym;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
@@ -119,6 +121,7 @@ public class MenuActivity extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.content_main,new Acerca_nosotros()).commit();
         }else if (id == R.id.cerrar) {
 
+            Cerrar_Session();
             Intent i = new Intent(MenuActivity.this, LoginActivity.class);
             MenuActivity.this.startActivity(i);
             finish();
@@ -130,4 +133,23 @@ public class MenuActivity extends AppCompatActivity
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
+    public void Cerrar_Session(){
+
+        SharedPreferences Session = getSharedPreferences("session_init", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor = Session.edit();
+
+        editor.putBoolean("yes", false);
+        editor.putString("nombre", "");
+        editor.putString("correo", "");
+        editor.commit();
+
+
+    }
+
+
+
+
+
 }
