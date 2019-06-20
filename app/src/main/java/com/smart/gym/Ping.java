@@ -1,5 +1,6 @@
 package com.smart.gym;
 
+import android.util.Log;
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -19,7 +20,7 @@ public class Ping {
 
 
         try {
-            url = new URL("http://comunisoft.com/smartgym.comunisoft.com/app_android/ping.php");
+            url = new URL("https://comunisoft.com/smartgym.comunisoft.com/app_android/ping.php");
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             respuesta = connection.getResponseCode();
 
@@ -38,6 +39,7 @@ public class Ping {
         } catch (Exception e) {
         }
 
+
         return ping;
 
 
@@ -48,14 +50,14 @@ public class Ping {
 
         try {
             String linea = "";
-            String[] sep;
-            sep = ping.split(";");
-            linea = sep[0];
+            linea = ping;
+            //Log.d("Hola","dato: "+linea);
 
-            if (linea.equalsIgnoreCase("ok"))
+            if (linea.equalsIgnoreCase("ok")) {
                 verificar = 1;
-            else
+            }else {
                 verificar = 0;
+            }
 
 
         } catch (Exception e) {

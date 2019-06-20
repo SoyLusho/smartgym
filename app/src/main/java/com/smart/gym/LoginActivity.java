@@ -9,6 +9,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import com.google.android.gms.ads.AdListener;
@@ -104,6 +105,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     @Override
                     public void run() {
                         int r=OBTENER_DATOS(resultado);
+
                         int internet = objeto.verificar_ping(ping);
                         if(r>0){
                             Crear_Session( );
@@ -137,9 +139,6 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     }
 
 
-
-
-
     public void Crear_Session( ){
         SharedPreferences Session=getSharedPreferences("session_init", Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = Session.edit();
@@ -161,7 +160,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
 
         try {
-            url = new URL("http://comunisoft.com/smartgym.comunisoft.com/app_android/login_prueba.php?correo=" + correo + "&contrasena=" + contraseña);
+            url = new URL("https://comunisoft.com/smartgym.comunisoft.com/app_android/login_prueba.php?correo=" + correo + "&contrasena=" + contraseña);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             respuesta = connection.getResponseCode();
 

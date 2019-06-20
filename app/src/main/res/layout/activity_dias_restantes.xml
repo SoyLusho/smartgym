@@ -66,15 +66,16 @@
 
         <TextView
             android:id="@+id/numero"
-            android:layout_width="103dp"
-            android:layout_height="136dp"
-
+            android:layout_width="140dp"
+            android:layout_height="135dp"
             android:text="30"
+            android:textAlignment="center"
             android:textColor="@color/verde"
             android:textSize="90sp"
             app:fontFamily="@font/roboto"
             app:layout_constraintBottom_toBottomOf="@+id/circulo"
             app:layout_constraintEnd_toEndOf="@+id/circulo"
+            app:layout_constraintHorizontal_bias="0.496"
             app:layout_constraintStart_toStartOf="@+id/circulo"
             app:layout_constraintTop_toTopOf="@+id/circulo"
             app:layout_constraintVertical_bias="0.528" />
